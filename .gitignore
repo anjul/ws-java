@@ -1,0 +1,8 @@
+.metadata/*
+.recommenders/*
+Concurrency/.settings/*
+Concurrency/.project/*
+Concurrency/.classpath/*
+Concurrency/bin/*
+RemoteSystemsTempFiles/*
+testJavaApplication/*
