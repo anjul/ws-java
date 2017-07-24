@@ -1,4 +1,4 @@
-package com.examples.with.synchornization.producerAndConsumer;
+package com.app.concurrency.with.synchornization.producerAndConsumer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,7 +51,7 @@ class Processor {
 	}
 }
 
-public class App3 {
+public class ProdAndConsumerWithSynchronizationBlockApp {
 
 	public static void main(String[] args) {
 

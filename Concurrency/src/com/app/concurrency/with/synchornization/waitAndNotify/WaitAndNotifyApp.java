@@ -1,4 +1,4 @@
-package com.examples.with.synchornization.waitAndNotify;
+package com.app.concurrency.with.synchornization.waitAndNotify;
 
 class Processor {
 
@@ -23,7 +23,7 @@ class Processor {
 	}
 }
 
-public class App2 {
+public class WaitAndNotifyApp {
 
 	public static void main(String[] args) {
 

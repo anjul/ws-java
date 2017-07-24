@@ -1,6 +1,6 @@
-package com.examples.without.synchornization;
+package com.app.concurrency.without.synchornization;
 
-public class App0 {
+public class ConcurrencyApp {
 
 	private static int counter = 0;
 

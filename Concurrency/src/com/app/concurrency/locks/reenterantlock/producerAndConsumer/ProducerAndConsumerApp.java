@@ -1,4 +1,4 @@
-package com.examples.locks.reenterantlock.producerAndConsumer;
+package com.app.concurrency.locks.reenterantlock.producerAndConsumer;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
@@ -34,7 +34,7 @@ class Worker{
 	}
 }
 
-public class App5 {
+public class ProducerAndConsumerApp {
 
 	public static void main(String[] args) {
 

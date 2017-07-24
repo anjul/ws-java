@@ -40,7 +40,7 @@ class Runner2 implements Runnable{
 	}
 }
 
-public class app {
+public class SleepAndJoinApp {
 
 	public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-package com.examples.locks.reenterantlock;
+package com.app.concurrency.locks.reenterantlock;
 /**
  * In this example we are observing the benefit of 'ReentrantLock'
  * ReentrantLock is the alternate way of doing 'Synchronization' blocks
@@ -10,7 +10,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 
-public class App4 {
+public class ReenterantLockApp {
 
 	private static Lock lock = new ReentrantLock();
 	public static int counter = 0;
