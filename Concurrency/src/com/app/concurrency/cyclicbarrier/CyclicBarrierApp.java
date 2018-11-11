@@ -20,7 +20,6 @@ public class CyclicBarrierApp {
 		for(int index=0;index<5;index++){
 			executorService.execute(new Worker(index+1, cyclicBarrier));
 		}
-		
 		executorService.shutdown();
 	}
 }
