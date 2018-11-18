@@ -1,19 +1,3 @@
-/*"blue-collar"
-"services"
-"admin."
-"entrepreneur"
-"self-employed"
-"technician"
-"management"
-"student"
-"retired"
-"housemaid"
-"unemployed"
-"unknown"*/
-
-
---create temp table if not exists tbltemp_job as select distinct(job) from tbl_bankadditional;
-
   select tbl_bankadditional.job as Job,
     (
      select round(
@@ -287,29 +271,3 @@
               ) as Unknown
 
               from tbl_bankadditional where job="unknown" group by job;
-
-
-
-
-
-
- /*select tbl_bankadditional.job as Job,
-   (
-    select round(
-      (select count(marital) from tbl_bankadditional where marital="married" and job="admin.") / (count(job)*0.01),2) from tbl_bankadditional where job like "%admin.%"
-   ) as Married,
-   (
-    select round(
-      (select count(marital) from tbl_bankadditional where marital="single" and job="admin.") / (count(job)*0.01),2) from tbl_bankadditional where job like "%admin.%"
-   ) as Single,
-   (
-    select round(
-      (select count(marital) from tbl_bankadditional where marital="divorced" and job="admin.") / (count(job)*0.01),2) from tbl_bankadditional where job like "%admin.%"
-   ) as Divorced,
-   (
-    select round(
-
-      (select count(marital) from tbl_bankadditional where marital="unknown" and job="admin.") / (count(job)*0.01),2) from tbl_bankadditional where job like "%admin.%"
-  ) as Unknown
-
-  from tbl_bankadditional LEFT JOIN job on tbl_bankadditional.job = tbltemp_job.job group by job;*/
